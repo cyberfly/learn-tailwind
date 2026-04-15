@@ -131,4 +131,21 @@ contoh
 </div>
 ```
 
+# Set margin
+
+Guna mrt atau mrb atau mrl atau mrr, dan margin number (0 hingga 96)
+
+Margin top `pt-2`
+Margin bottom `pb-2`
+Margin left `pl-2`
+Margin right `pr-2`
+
+contoh
+
+```
+<div class="bg-pink-400 mt-10 ml-5 mr-10 mb-8">
+    Kotak pink, jarak dari atas 40px, jarak dari kiri 20px, jarak dari kanan 40px, jarak dari bawah 32px
+  </div>
+```
+
 
