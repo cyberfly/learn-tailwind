@@ -135,10 +135,10 @@ contoh
 
 Guna mrt atau mrb atau mrl atau mrr, dan margin number (0 hingga 96)
 
-Margin top `pt-2`
-Margin bottom `pb-2`
-Margin left `pl-2`
-Margin right `pr-2`
+Margin top `mt-2`
+Margin bottom `mb-2`
+Margin left `ml-2`
+Margin right `mr-2`
 
 contoh
 
