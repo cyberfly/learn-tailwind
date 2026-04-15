@@ -1,0 +1,134 @@
+### Set background
+
+Guna bg, warna, dan contrast number
+
+Contoh
+
+```
+<div class="bg-yellow-200">Kotak background kuning</div>
+```
+
+```
+bg-yellow-500
+bg-red-200
+bg-gray-50
+```
+Contrast number dari 50 hingga 900
+
+```
+# dark yellow
+bg-yellow-900
+
+# light yellow
+bg-yellow-100
+```
+
+### Set border color
+
+Guna border, border color contrast
+
+contoh
+
+```
+border border-red-400
+```
+
+```
+<div class="bg-yellow-200 border border-red-400">Kotak background kuning border merah</div>
+```
+
+### Set text color
+
+Guna text, color, contrast
+
+contoh
+
+```
+text-blue-600
+```
+
+```
+<div class="bg-yellow-200 border border-red-400 text-blue-600">Kotak background kuning border merah tulisan biru</div>
+```
+
+### Set text size
+
+Kita ada option dari
+
+```
+text-xs
+text-sm
+text-md
+text-lg
+text-xl
+text-2xl
+text-3xl
+text-4xl
+text-5xl
+text-6xl
+text-7xl
+text-8xl
+text-9xl
+```
+
+Contoh
+
+```
+<div class="bg-pink-200 text-indigo-700 text-2xl">
+Ini kotak 2, nested dalam kotak 1, tulisan besar, font bold, underline. Bg pink. Tulisan indigo
+</div>
+```
+
+### Set text bold
+
+Kita ada option dari
+
+```
+font-bold
+font-semibold
+font-extrabold
+font-medium
+font-light
+font-extralight
+```
+
+contoh
+
+```
+<div class="bg-pink-200 text-indigo-700 text-2xl font-bold">
+    Ini kotak 2, nested dalam kotak 1, tulisan besar, font bold, underline. Bg pink. Tulisan indigo
+</div>
+```
+
+### Set text underline
+
+```
+underline
+```
+
+contoh
+
+```
+<div class="bg-pink-200 text-indigo-700 text-2xl font-bold underline">
+    Ini kotak 2, nested dalam kotak 1, tulisan besar, font bold, underline. Bg pink. Tulisan indigo
+</div>
+```
+
+# Set padding
+
+Guna pt atau pb atau pl atau pr, dan padding number (0 hingga 96)
+
+Padding top `pt-2`
+Padding bottom `pb-2`
+Padding left `pl-2`
+Padding right `pr-2`
+
+contoh
+
+```
+<div class="bg-yellow-400 pt-10 pb-4 pl-10 pr-4">
+    Ini kotak kuning, dengan padding atas besar, padding bawah kecil, padding kiri besar, padding kanan kecil
+</div>
+```
+
+
