@@ -148,4 +148,29 @@ contoh
   </div>
 ```
 
+# Susun kotak side by side
+
+Tambah `flex` pada kotak parent, dan kotak lain perlu berada di dalam kotak tersebut
+
+```
+<!-- kotak 5 -->
+
+  <div class="bg-yellow-500 flex">
+
+    <!-- kotak 6 kiri -->
+     <div class="bg-blue-500">
+      Kotak kiri
+     </div>
+    <!-- end kotak 6 kiri -->
+
+    <!-- kotak 7 kanan -->
+     <div class="bg-pink-400">
+      kotak kanan
+     </div>
+    <!-- end kotak 7 kanan -->
+
+  </div>
+
+  <!-- end kotak 5 -->
+```
 
