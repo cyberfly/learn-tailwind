@@ -173,4 +173,33 @@ Tambah `flex` pada kotak parent, dan kotak lain perlu berada di dalam kotak ters
 
   <!-- end kotak 5 -->
 ```
+# Set width kotak
 
+Boleh pakai `w-x` dari 1 hingga 96
+
+```
+w-16
+w-4
+w-96
+```
+
+contoh 
+
+```
+<!-- kotak 6 kiri -->
+     <div class="bg-blue-500 w-96">
+      Kotak kiri
+     </div>
+    <!-- end kotak 6 kiri -->
+```
+
+# Set width kotak auto width
+
+Jika kotak berada dalam parent flex, kita boleh auto width kotak tersebut untuk ambil semua space yang ada 
+
+Contoh
+```
+<div class="bg-pink-400 flex-1">
+    kotak kanan
+</div>
+```
