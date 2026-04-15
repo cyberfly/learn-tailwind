@@ -203,3 +203,33 @@ Contoh
     kotak kanan
 </div>
 ```
+
+# Set kotak auto height
+
+Jika kotak berada dalam parent flex, kita boleh set auto height kotak tersebut dengan setkan parent height, contohya mengikut screen height
+
+contoh
+
+```
+<!-- kotak 5 -->
+
+  <div class="bg-yellow-500 flex min-h-screen h-screen">
+
+    <!-- kotak 6 kiri -->
+     <div class="bg-blue-500 w-96">
+      Kotak kiri
+     </div>
+    <!-- end kotak 6 kiri -->
+
+    <!-- kotak 7 kanan -->
+    <div class="bg-pink-400 flex-1">
+      kotak kanan
+    </div>
+    <!-- end kotak 7 kanan -->
+
+  </div>
+
+  <!-- end kotak 5 -->
+```
+
+
