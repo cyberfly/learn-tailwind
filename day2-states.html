@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>learntailwind</title>
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- kotak1 -->
+
+  <div class="bg-black p-4 text-white hover:bg-blue-600">ini background hitam bila hover background biru</div>
+
+  <!-- end kotak1 -->
+
+  <!-- kotak2 -->
+
+  <div class="mt-4">
+    <button class="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-800">Primary</button>
+  </div>
+
+  <div class="mt-4">
+    <button class="rounded-md bg-pink-600 px-4 py-2 text-lg text-white hover:bg-pink-800 hover:text-2xl">Secondary
+      (hover text 2xl)</button>
+  </div>
+
+  <div class="mt-4">
+    <button
+      class="rounded-md bg-gray-600 px-4 py-2 text-lg text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-25"
+      disabled>Submit</button>
+  </div>
+
+  <div class="mt-4">
+    <button
+      class="rounded-md bg-blue-600 px-4 py-2 text-white ring-amber-200 hover:bg-blue-800 focus:bg-red-600 focus:ring-4">Focus</button>
+  </div>
+
+  <div class="mt-4">
+    <button class="btn-primary">Test custom class</button>
+  </div>
+
+  <!-- test svg -->
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    class="size-36 rounded-full bg-amber-200 stroke-amber-700">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+  </svg>
+
+  <!-- end test svg -->
+
+  <!-- button with icon -->
+
+  <button
+    class="mt-10 rounded-md bg-blue-600 px-4 py-2 text-xl text-blue-50 hover:bg-blue-700 inline-flex gap-2 items-center">
+    Submit
+    <!-- icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+    </svg>
+  </button>
+
+  <!-- end button with icon -->
+
+  <!-- end kotak2 -->
+
+
+</body>
+
+</html>
