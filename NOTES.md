@@ -324,5 +324,85 @@ sekarang dekat html kita boleh gunakan class tersebut
 <button class="btn-primary">Test custom class</button>
 ```
 
+# Relative dan absolute positioning
+
+Jika kita ingin letak element spesifik pada satu point yang relative pada parent, letakkan `relative` pada parent, dan
+`absolute` pada element tersebut.
+
+Pada element `absolute` tersebut, kita boleh gunakan class seperti `right`, `top`, `bottom`, `left` untuk mengerakkan kedudukan element
+
+Contoh kita nak UI notification indicator
+
+```html
+<!-- parent element -->
+<div class="bg-gray-400 size-48 mx-auto mt-4 relative">
+
+    <!-- top right indicator -->
+
+    <div class="bg-red-300 text-red-50 size-8 absolute -right-2 -top-4 rounded-full flex items-center justify-center">
+      123
+    </div>
+
+    <!-- top left indicator -->
+
+    <div class="bg-red-300 text-red-50 size-8 absolute -left-2 -top-4 rounded-full flex items-center justify-center">
+      123
+    </div>
+
+    <!-- bottom right indicator -->
+
+    <div
+      class="bg-red-300 text-red-50 size-8 absolute -right-2 -bottom-4 rounded-full flex items-center justify-center">
+      123
+    </div>
+
+    <!-- bottom left indicator -->
+
+    <div class="bg-red-300 text-red-50 size-8 absolute -left-2 -bottom-4 rounded-full flex items-center justify-center">
+      123
+    </div>
+
+  </div>
+```
+
+# Fixed positioning
+
+Gunakan `fixed` pada parent element jika kita mahu ia statik pada satu tempat, walaupun kita scroll masih di tempat sama.
+
+Contoh use case, Chatbox
+
+```html
+<div class="w-56 h-96 bg-blue-500 fixed right-10 bottom-0">Chatbox</div>
+```
+
+# Centering items with Flex
+
+## Align content ke tengah (vertical sahaja)
+
+Untuk align child item supaya semua align center, tambah pada parent `flex items-center`
+
+```html
+<div class="flex items-center">
+</div>
+```
+
+## Center betul-betul (horizontal + vertical)
+
+Dan jika nak child items betul-betul berada di tengah, tambah `justify-center`
+
+```html
+<div class="flex items-center justify-center">
+</div>
+```
+
+Contoh kita gunakan flex untuk center betul-betul nombor 123 (horizontal + vertical)
+
+```html
+<div class="bg-red-300 text-red-50 size-8 absolute -right-2 -top-4 rounded-full flex items-center justify-center">
+    123
+</div>
+```
+
+
 
 
