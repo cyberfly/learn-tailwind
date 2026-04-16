@@ -17,14 +17,21 @@
 
     <!-- md below: bg-pink-100 -->
     <!-- md and above: bg-blue-400 -->
+    <!-- hide sidebar on mobile -->
 
-    <div class="w-32 md:w-72 lg:w-96 bg-pink-100 md:bg-blue-400">
+    <div class="hidden md:block md:w-72 lg:w-96 bg-pink-100 md:bg-blue-400 ">
       Left sidebar
     </div>
     <!-- end left sidebar -->
 
     <!-- content -->
     <div class="flex-1 bg-pink-200">
+
+      <div class="mb-4">
+        <!-- harmburger menu show only on mobile -->
+        <button class="bg-blue-300 p-2 text-white md:hidden">Hamburger</button>
+      </div>
+
       Content area
     </div>
     <!-- end content -->
