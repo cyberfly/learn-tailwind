@@ -285,3 +285,44 @@ solution, tambah `overflow-hidden` pada parent, ia akan hide overflow dari child
 </div>
 ```
 
+# Button states
+
+Gunakan hover untuk ubah style bila hover button
+
+```html
+<button class="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-800">Primary</button>
+```
+
+Gunakan focus untuk ubah style bila tekan button
+
+```html
+<button
+      class="rounded-md bg-blue-600 px-4 py-2 text-white ring-amber-200 hover:bg-blue-800 focus:ring-4">Focus button style</button>
+```
+
+Gunakan disabled untuk ubah style bila butang disabled
+
+```html
+<button
+      class="rounded-md bg-gray-600 px-4 py-2 text-lg text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-25"
+disabled>Submit</button>
+```
+
+# Extact style ke custom class
+
+Jika class jadi panjang, tapi kita sentiasa guna element tersebut di banyak tempat, contohnya button, kita boleh extract sebagai custom class ke dalam `style.css`
+
+```css
+.btn-primary {
+  @apply rounded-md bg-blue-600 px-4 py-2 text-white ring-amber-200 hover:bg-blue-800 focus:bg-red-600 focus:ring-4;
+}
+```
+
+sekarang dekat html kita boleh gunakan class tersebut
+
+```html
+<button class="btn-primary">Test custom class</button>
+```
+
+
+
