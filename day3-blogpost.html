@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>learntailwind</title>
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-blue-100 min-h-screen p-10">
+    <article class="prose prose-lg">
+      <h1>The Future of Web Design with Tailwind CSS</h1>
+
+      <p class="lead">
+        Building modern websites used to mean writing long CSS files, naming things carefully, and hoping nothing broke
+        when a small style changed. Today, tools like <strong>Tailwind CSS</strong> have changed that workflow
+        completely.
+      </p>
+
+      <p>
+        Tailwind is a utility-first CSS framework that lets developers build interfaces directly in their HTML. Instead
+        of switching back and forth between markup and a stylesheet, you compose designs using small reusable utility
+        classes.
+      </p>
+
+      <hr>
+
+      <h2>Why Developers Like Tailwind</h2>
+
+      <p>
+        Tailwind has become popular because it helps teams move faster while still keeping the design system consistent.
+        It does not remove the need for design thinking, but it makes implementation much more direct.
+      </p>
+
+      <ul>
+        <li>Faster UI development</li>
+        <li>Consistent spacing and sizing</li>
+        <li>Easy responsive design</li>
+        <li>Less context switching between files</li>
+        <li>Reusable patterns across projects</li>
+      </ul>
+
+      <h2>A Simple Example</h2>
+
+      <p>
+        Here is a basic card component written with Tailwind classes:
+      </p>
+
+      <pre><code>&lt;div class="rounded-2xl border p-6 shadow-sm"&gt;
+  &lt;h3 class="text-xl font-semibold"&gt;Welcome&lt;/h3&gt;
+  &lt;p class="mt-2 text-sm text-slate-600"&gt;
+    This is a simple card built with utility classes.
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <p>
+        The example above shows how structure, spacing, typography, and visual styling can all live close to the markup.
+      </p>
+
+      <blockquote>
+        <p>
+          Tailwind does not try to hide CSS. It gives you a faster and more predictable way to use it.
+        </p>
+      </blockquote>
+
+      <h2>Responsive Design Feels Natural</h2>
+
+      <p>
+        One of the biggest strengths of Tailwind is how naturally it handles responsive design. You can apply styles at
+        different breakpoints without writing media queries manually.
+      </p>
+
+      <pre><code>&lt;div class="text-sm md:text-base lg:text-lg"&gt;
+  Responsive text size
+&lt;/div&gt;
+</code></pre>
+
+      <p>
+        In that snippet:
+      </p>
+
+      <ol>
+        <li><code>text-sm</code> applies on small screens</li>
+        <li><code>md:text-base</code> applies on medium screens</li>
+        <li><code>lg:text-lg</code> applies on large screens</li>
+      </ol>
+
+      <h2>When Tailwind Really Shines</h2>
+
+      <p>
+        Tailwind works especially well in projects where speed, consistency, and collaboration matter. It is commonly
+        used for:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Use Case</th>
+            <th>Why It Works Well</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Landing pages</td>
+            <td>Fast iteration and easy visual tuning</td>
+          </tr>
+          <tr>
+            <td>Dashboards</td>
+            <td>Reusable UI patterns and predictable spacing</td>
+          </tr>
+          <tr>
+            <td>Admin panels</td>
+            <td>Quick development with consistent components</td>
+          </tr>
+          <tr>
+            <td>Design systems</td>
+            <td>Shared tokens and scalable conventions</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Common Misunderstandings</h2>
+
+      <p>
+        Some developers think Tailwind makes HTML messy. That can happen if components are not structured well, but in
+        practice, many teams find the opposite. Utility classes make styling decisions visible right where the element
+        is defined.
+      </p>
+
+      <p>
+        Another common misunderstanding is that Tailwind replaces CSS knowledge. It does not. In fact, understanding
+        spacing, layout, typography, and responsiveness makes Tailwind much more effective.
+      </p>
+
+      <h3>What Tailwind does not do</h3>
+
+      <ul>
+        <li>It does not automatically make a design good</li>
+        <li>It does not replace layout fundamentals</li>
+        <li>It does not remove the need for accessibility</li>
+        <li>It does not stop you from writing custom CSS when needed</li>
+      </ul>
+
+      <h2>Example Content Section</h2>
+
+      <p>
+        Imagine you are building a product page for a modern SaaS app. You may want a hero section, a feature grid,
+        testimonials, and pricing cards. Tailwind makes it easy to prototype all of these parts quickly.
+      </p>
+
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+          alt="Developer workspace with laptop and code on screen">
+        <figcaption>A modern development workflow often values speed, clarity, and reusable UI patterns.</figcaption>
+      </figure>
+
+      <h2>Code Style Comparison</h2>
+
+      <p>
+        Compare a traditional class-based approach with a utility-first one:
+      </p>
+
+      <pre><code>/* Traditional CSS */
+.card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+</code></pre>
+
+      <pre><code>&lt;div class="rounded-2xl p-6 border shadow-sm"&gt;
+  Card content
+&lt;/div&gt;
+</code></pre>
+
+      <p>
+        Both approaches are valid. Tailwind simply reduces the gap between idea and implementation.
+      </p>
+
+      <h2>Best Practices</h2>
+
+      <p>
+        If you want to use Tailwind well, focus on a few habits:
+      </p>
+
+      <ol>
+        <li>Keep spacing consistent</li>
+        <li>Extract repeated patterns into components</li>
+        <li>Use semantic HTML first</li>
+        <li>Test layouts on different screen sizes</li>
+        <li>Do not ignore readability just because styling is fast</li>
+      </ol>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Tailwind CSS is not just a trend. It reflects a shift in how many developers think about styling: smaller
+        building blocks, faster iteration, and more visible design decisions.
+      </p>
+
+      <p>
+        Whether you are building a personal portfolio, an internal dashboard, or a production web app, Tailwind can be a
+        powerful tool when used thoughtfully.
+      </p>
+
+      <p>
+        The real goal is not to follow hype. The goal is to build better interfaces with less friction.
+      </p>
+
+      <hr>
+
+      <h2>Quick FAQ</h2>
+
+      <h3>Is Tailwind only for advanced developers?</h3>
+      <p>
+        No. Beginners can use it too, especially if they want to learn spacing, layout, and responsive design through
+        practice.
+      </p>
+
+      <h3>Can I still write normal CSS?</h3>
+      <p>
+        Yes. Tailwind works well alongside custom CSS when a project needs something more specific.
+      </p>
+
+      <h3>Should every project use Tailwind?</h3>
+      <p>
+        Not necessarily. It depends on the team, the project size, and how the design system is managed.
+      </p>
+    </article>
+  </div>
+</body>
+
+</html>
