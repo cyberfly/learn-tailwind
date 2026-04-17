@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -49,6 +49,12 @@
           <a href="#" class="hover:underline">About</a>
           <a href="#" class="hover:underline">Contact</a>
 
+          <span class="relative inline-flex"><button type="button"
+              class="inline-flex cursor-not-allowed items-center rounded-md bg-white px-4 py-2 text-sm leading-6 font-semibold text-sky-500 ring-1 ring-gray-900/10 transition duration-150 ease-in-out dark:bg-white/5 dark:ring-white/20"
+              disabled="">Transactions</button><span class="absolute top-0 right-0 -mt-1 -mr-1 flex size-3"><span
+                class="absolute animate-ping bg-sky-400 h-full inline-flex opacity-75 rounded-full w-full"></span><span
+                class="relative inline-flex size-3 rounded-full bg-sky-500"></span></span></span>
+
           <!-- messenger button -->
 
           <button class="bg-gray-200 p-2 rounded-full relative">
@@ -61,7 +67,7 @@
 
             <!-- indicator -->
             <div
-              class="bg-red-600 size-6 rounded-full absolute -top-2 -right-2 text-white flex items-center justify-center text-xs">
+              class="animate-bounce bg-red-600 size-6 rounded-full absolute -top-2 -right-2 text-white flex items-center justify-center text-xs">
               4</div>
 
           </button>
@@ -371,7 +377,7 @@
         <!-- action -->
         <div>
           <button class="rounded-md p-2 bg-gray-100 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 animate-bounce">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
             </svg>
